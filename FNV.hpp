@@ -3,7 +3,7 @@
 #include <cstdint>
 
 namespace fnv {
-    namespace v0 {
+    namespace fnv0 {
         constexpr std::uint32_t hash32(const char* str) noexcept {
             std::uint32_t prime = 0x1000193;
             std::uint32_t hash = 0;
@@ -23,7 +23,7 @@ namespace fnv {
         }
     }
 
-    namespace v1 {
+    namespace fnv1 {
         constexpr std::uint32_t hash32(const char* str) noexcept {
             std::uint32_t prime = 0x1000193;
             std::uint32_t offset_basis = 0x811c9dc5;
@@ -45,7 +45,7 @@ namespace fnv {
         }
     }
 
-    namespace v1a {
+    namespace fnv1a {
         constexpr std::uint32_t hash32(const char* str) noexcept {
             std::uint32_t prime = 0x1000193;
             std::uint32_t offset_basis = 0x811c9dc5;
